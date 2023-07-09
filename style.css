@@ -6,6 +6,7 @@
 body {
     font-family: Roboto-Regular, Helvetica, sans-serif;
     background-color: #f5f5f5;
+    
 }
 
 
@@ -21,16 +22,16 @@ header {
 }
 
 .message {
-    margin-left: 8px;
+    /* margin-left: 8px; */
     /* display: inline-block; */
-    font-size: 18px;
+    font-size: 1.4vw;
     color: #044254;
     position: fixed;
     bottom: 0;
     right: 3vw;
     z-index: 10;
     background-color: white;
-    width: 10vw;
+    width: 8vw;
     height: 8vh;
     display: flex;
     /* justify-content: center; */
@@ -40,7 +41,7 @@ header {
     cursor: pointer;
 }
 .message img{
-   padding: 0 1vw;
+   padding: 0 0.8vw 0 0;
 }
 
 main {
@@ -226,6 +227,7 @@ header img {
 .tabs {
     display: flex;
     margin-left: 2vw;
+    
 }
 
 .tabs .tab1 {
@@ -488,4 +490,16 @@ header img {
     border: 1px solid #f85606;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+
+@media only screen and (max-width:735px){
+    .tabs{
+        flex-wrap: wrap;
+    }
+    .message{
+        
+        width: 10vw;
+       
+    }
 }
